@@ -32,6 +32,15 @@ footer {
   transition: 0.3s;
 }
 
+.gallery-img {
+  width: 100%;
+  padding: 1px 1px;
+}
+
+#gallery .row > * {
+  padding: 0;
+}
+
 footer div a {
   text-decoration: none;
 }
