@@ -75,3 +75,11 @@ gsap.to(".lead", {
   delay: 7,
   text: "Software Developer",
 });
+
+// tilt.js
+
+VanillaTilt.init(document.querySelectorAll(".tech-box"), {
+  max: 35,
+  speed: 1000,
+  glare: true,
+});

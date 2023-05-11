@@ -32,14 +32,96 @@ footer {
   transition: 0.3s;
 }
 
+#tech {
+  color: white;
+}
+
+.tech-box {
+  position: relative;
+  background-color: #212529;
+  border-radius: 10px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.tech-box::before {
+  content: "PROGRAMMING";
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.tech-box:hover::before {
+  opacity: 0.3;
+}
+
+.tech-box::after {
+  content: "LANGUAGE";
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.tech-box:hover::after {
+  opacity: 0.5;
+}
+
+.tech-name {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 30px);
+  transition: 0.3s;
+}
+
+.tech-box:hover .tech-name {
+  top: 10px;
+  opacity: 1;
+}
+
+.tech-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 100px);
+  transition: 0.5s;
+}
+
+.tech-box:hover .tech-img {
+  transform: translate3d(-50%, -50%, 100px) scale(1.1);
+}
+
 .gallery-img {
   width: 100%;
   padding: 1px 1px;
+  transition: 0.1s;
+}
+
+#gallery .gallery-img:hover {
+  transform: scale(1.2);
 }
 
 #gallery .row > * {
   padding: 0;
 }
+
 
 footer div a {
   text-decoration: none;
